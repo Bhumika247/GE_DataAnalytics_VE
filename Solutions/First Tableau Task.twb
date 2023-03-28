@@ -1,0 +1,1184 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Flight Data Tables' inline='true' name='federated.1ug3vr31bs3n3q14khb1r0i7jhel' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='av_engine_data_aic' name='textscan.0cml0im0f8ary119kqz8m1krspv0'>
+            <connection class='textscan' directory='C:/Projects/Forage Data Analyst Certification/GE Data Analytics Data Set' filename='av_engine_data_aic.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='av_engine_data_aic.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='dataset' />
+            <column datatype='integer' name='esn' />
+            <column datatype='integer' name='unit' />
+            <column datatype='integer' name='flight_cycle' />
+            <column datatype='datetime' name='datetime' />
+            <column datatype='string' name='operator' />
+            <column datatype='string' name='depart_icao' />
+            <column datatype='string' name='destination_icao' />
+            <column datatype='real' name='hpc_eff_mod' />
+            <column datatype='real' name='hpc_flow_mod' />
+            <column datatype='integer' name='tra' />
+            <column datatype='real' name='t2' />
+            <column datatype='real' name='t24' />
+            <column datatype='real' name='t30' />
+            <column datatype='real' name='t50' />
+            <column datatype='real' name='p2' />
+            <column datatype='real' name='p15' />
+            <column datatype='real' name='p30' />
+            <column datatype='real' name='nf' />
+            <column datatype='real' name='nc' />
+            <column datatype='real' name='epr' />
+            <column datatype='real' name='ps30' />
+            <column datatype='real' name='phi' />
+            <column datatype='real' name='nrf' />
+            <column datatype='real' name='nrc' />
+            <column datatype='real' name='bpr' />
+            <column datatype='real' name='farb' />
+            <column datatype='integer' name='htbleed' />
+            <column datatype='integer' name='nf_dmd' />
+            <column datatype='integer' name='pcnfr_dmd' />
+            <column datatype='real' name='w31' />
+            <column datatype='real' name='w32' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.0cml0im0f8ary119kqz8m1krspv0' name='av_engine_data_aic.csv' table='[av_engine_data_aic#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='dataset' ordinal='0' />
+              <column datatype='integer' name='esn' ordinal='1' />
+              <column datatype='integer' name='unit' ordinal='2' />
+              <column datatype='integer' name='flight_cycle' ordinal='3' />
+              <column datatype='datetime' name='datetime' ordinal='4' />
+              <column datatype='string' name='operator' ordinal='5' />
+              <column datatype='string' name='depart_icao' ordinal='6' />
+              <column datatype='string' name='destination_icao' ordinal='7' />
+              <column datatype='real' name='hpc_eff_mod' ordinal='8' />
+              <column datatype='real' name='hpc_flow_mod' ordinal='9' />
+              <column datatype='integer' name='tra' ordinal='10' />
+              <column datatype='real' name='t2' ordinal='11' />
+              <column datatype='real' name='t24' ordinal='12' />
+              <column datatype='real' name='t30' ordinal='13' />
+              <column datatype='real' name='t50' ordinal='14' />
+              <column datatype='real' name='p2' ordinal='15' />
+              <column datatype='real' name='p15' ordinal='16' />
+              <column datatype='real' name='p30' ordinal='17' />
+              <column datatype='real' name='nf' ordinal='18' />
+              <column datatype='real' name='nc' ordinal='19' />
+              <column datatype='real' name='epr' ordinal='20' />
+              <column datatype='real' name='ps30' ordinal='21' />
+              <column datatype='real' name='phi' ordinal='22' />
+              <column datatype='real' name='nrf' ordinal='23' />
+              <column datatype='real' name='nrc' ordinal='24' />
+              <column datatype='real' name='bpr' ordinal='25' />
+              <column datatype='real' name='farb' ordinal='26' />
+              <column datatype='integer' name='htbleed' ordinal='27' />
+              <column datatype='integer' name='nf_dmd' ordinal='28' />
+              <column datatype='integer' name='pcnfr_dmd' ordinal='29' />
+              <column datatype='real' name='w31' ordinal='30' />
+              <column datatype='real' name='w32' ordinal='31' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0cml0im0f8ary119kqz8m1krspv0' name='av_engine_data_axm.csv' table='[av_engine_data_axm#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='dataset' ordinal='0' />
+              <column datatype='integer' name='esn' ordinal='1' />
+              <column datatype='integer' name='unit' ordinal='2' />
+              <column datatype='integer' name='flight_cycle' ordinal='3' />
+              <column datatype='datetime' name='datetime' ordinal='4' />
+              <column datatype='string' name='operator' ordinal='5' />
+              <column datatype='string' name='depart_icao' ordinal='6' />
+              <column datatype='string' name='destination_icao' ordinal='7' />
+              <column datatype='real' name='hpc_eff_mod' ordinal='8' />
+              <column datatype='real' name='hpc_flow_mod' ordinal='9' />
+              <column datatype='integer' name='tra' ordinal='10' />
+              <column datatype='real' name='t2' ordinal='11' />
+              <column datatype='real' name='t24' ordinal='12' />
+              <column datatype='real' name='t30' ordinal='13' />
+              <column datatype='real' name='t50' ordinal='14' />
+              <column datatype='real' name='p2' ordinal='15' />
+              <column datatype='real' name='p15' ordinal='16' />
+              <column datatype='real' name='p30' ordinal='17' />
+              <column datatype='real' name='nf' ordinal='18' />
+              <column datatype='real' name='nc' ordinal='19' />
+              <column datatype='real' name='epr' ordinal='20' />
+              <column datatype='real' name='ps30' ordinal='21' />
+              <column datatype='real' name='phi' ordinal='22' />
+              <column datatype='real' name='nrf' ordinal='23' />
+              <column datatype='real' name='nrc' ordinal='24' />
+              <column datatype='real' name='bpr' ordinal='25' />
+              <column datatype='real' name='farb' ordinal='26' />
+              <column datatype='integer' name='htbleed' ordinal='27' />
+              <column datatype='integer' name='nf_dmd' ordinal='28' />
+              <column datatype='integer' name='pcnfr_dmd' ordinal='29' />
+              <column datatype='real' name='w31' ordinal='30' />
+              <column datatype='real' name='w32' ordinal='31' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0cml0im0f8ary119kqz8m1krspv0' name='av_engine_data_fron.csv' table='[av_engine_data_fron#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='dataset' ordinal='0' />
+              <column datatype='integer' name='esn' ordinal='1' />
+              <column datatype='integer' name='unit' ordinal='2' />
+              <column datatype='integer' name='flight_cycle' ordinal='3' />
+              <column datatype='datetime' name='datetime' ordinal='4' />
+              <column datatype='string' name='operator' ordinal='5' />
+              <column datatype='string' name='depart_icao' ordinal='6' />
+              <column datatype='string' name='destination_icao' ordinal='7' />
+              <column datatype='real' name='hpc_eff_mod' ordinal='8' />
+              <column datatype='real' name='hpc_flow_mod' ordinal='9' />
+              <column datatype='integer' name='tra' ordinal='10' />
+              <column datatype='real' name='t2' ordinal='11' />
+              <column datatype='real' name='t24' ordinal='12' />
+              <column datatype='real' name='t30' ordinal='13' />
+              <column datatype='real' name='t50' ordinal='14' />
+              <column datatype='real' name='p2' ordinal='15' />
+              <column datatype='real' name='p15' ordinal='16' />
+              <column datatype='real' name='p30' ordinal='17' />
+              <column datatype='real' name='nf' ordinal='18' />
+              <column datatype='real' name='nc' ordinal='19' />
+              <column datatype='real' name='epr' ordinal='20' />
+              <column datatype='real' name='ps30' ordinal='21' />
+              <column datatype='real' name='phi' ordinal='22' />
+              <column datatype='real' name='nrf' ordinal='23' />
+              <column datatype='real' name='nrc' ordinal='24' />
+              <column datatype='real' name='bpr' ordinal='25' />
+              <column datatype='real' name='farb' ordinal='26' />
+              <column datatype='integer' name='htbleed' ordinal='27' />
+              <column datatype='integer' name='nf_dmd' ordinal='28' />
+              <column datatype='integer' name='pcnfr_dmd' ordinal='29' />
+              <column datatype='real' name='w31' ordinal='30' />
+              <column datatype='real' name='w32' ordinal='31' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0cml0im0f8ary119kqz8m1krspv0' name='av_engine_data_pgt.csv' table='[av_engine_data_pgt#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='dataset' ordinal='0' />
+              <column datatype='integer' name='esn' ordinal='1' />
+              <column datatype='integer' name='unit' ordinal='2' />
+              <column datatype='integer' name='flight_cycle' ordinal='3' />
+              <column datatype='datetime' name='datetime' ordinal='4' />
+              <column datatype='string' name='operator' ordinal='5' />
+              <column datatype='string' name='depart_icao' ordinal='6' />
+              <column datatype='string' name='destination_icao' ordinal='7' />
+              <column datatype='real' name='hpc_eff_mod' ordinal='8' />
+              <column datatype='real' name='hpc_flow_mod' ordinal='9' />
+              <column datatype='integer' name='tra' ordinal='10' />
+              <column datatype='real' name='t2' ordinal='11' />
+              <column datatype='real' name='t24' ordinal='12' />
+              <column datatype='real' name='t30' ordinal='13' />
+              <column datatype='real' name='t50' ordinal='14' />
+              <column datatype='real' name='p2' ordinal='15' />
+              <column datatype='real' name='p15' ordinal='16' />
+              <column datatype='real' name='p30' ordinal='17' />
+              <column datatype='real' name='nf' ordinal='18' />
+              <column datatype='real' name='nc' ordinal='19' />
+              <column datatype='real' name='epr' ordinal='20' />
+              <column datatype='real' name='ps30' ordinal='21' />
+              <column datatype='real' name='phi' ordinal='22' />
+              <column datatype='real' name='nrf' ordinal='23' />
+              <column datatype='real' name='nrc' ordinal='24' />
+              <column datatype='real' name='bpr' ordinal='25' />
+              <column datatype='real' name='farb' ordinal='26' />
+              <column datatype='integer' name='htbleed' ordinal='27' />
+              <column datatype='integer' name='nf_dmd' ordinal='28' />
+              <column datatype='integer' name='pcnfr_dmd' ordinal='29' />
+              <column datatype='real' name='w31' ordinal='30' />
+              <column datatype='real' name='w32' ordinal='31' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='av_engine_data_aic.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='dataset' />
+            <column datatype='integer' name='esn' />
+            <column datatype='integer' name='unit' />
+            <column datatype='integer' name='flight_cycle' />
+            <column datatype='datetime' name='datetime' />
+            <column datatype='string' name='operator' />
+            <column datatype='string' name='depart_icao' />
+            <column datatype='string' name='destination_icao' />
+            <column datatype='real' name='hpc_eff_mod' />
+            <column datatype='real' name='hpc_flow_mod' />
+            <column datatype='integer' name='tra' />
+            <column datatype='real' name='t2' />
+            <column datatype='real' name='t24' />
+            <column datatype='real' name='t30' />
+            <column datatype='real' name='t50' />
+            <column datatype='real' name='p2' />
+            <column datatype='real' name='p15' />
+            <column datatype='real' name='p30' />
+            <column datatype='real' name='nf' />
+            <column datatype='real' name='nc' />
+            <column datatype='real' name='epr' />
+            <column datatype='real' name='ps30' />
+            <column datatype='real' name='phi' />
+            <column datatype='real' name='nrf' />
+            <column datatype='real' name='nrc' />
+            <column datatype='real' name='bpr' />
+            <column datatype='real' name='farb' />
+            <column datatype='integer' name='htbleed' />
+            <column datatype='integer' name='nf_dmd' />
+            <column datatype='integer' name='pcnfr_dmd' />
+            <column datatype='real' name='w31' />
+            <column datatype='real' name='w32' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.0cml0im0f8ary119kqz8m1krspv0' name='av_engine_data_aic.csv' table='[av_engine_data_aic#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='dataset' ordinal='0' />
+              <column datatype='integer' name='esn' ordinal='1' />
+              <column datatype='integer' name='unit' ordinal='2' />
+              <column datatype='integer' name='flight_cycle' ordinal='3' />
+              <column datatype='datetime' name='datetime' ordinal='4' />
+              <column datatype='string' name='operator' ordinal='5' />
+              <column datatype='string' name='depart_icao' ordinal='6' />
+              <column datatype='string' name='destination_icao' ordinal='7' />
+              <column datatype='real' name='hpc_eff_mod' ordinal='8' />
+              <column datatype='real' name='hpc_flow_mod' ordinal='9' />
+              <column datatype='integer' name='tra' ordinal='10' />
+              <column datatype='real' name='t2' ordinal='11' />
+              <column datatype='real' name='t24' ordinal='12' />
+              <column datatype='real' name='t30' ordinal='13' />
+              <column datatype='real' name='t50' ordinal='14' />
+              <column datatype='real' name='p2' ordinal='15' />
+              <column datatype='real' name='p15' ordinal='16' />
+              <column datatype='real' name='p30' ordinal='17' />
+              <column datatype='real' name='nf' ordinal='18' />
+              <column datatype='real' name='nc' ordinal='19' />
+              <column datatype='real' name='epr' ordinal='20' />
+              <column datatype='real' name='ps30' ordinal='21' />
+              <column datatype='real' name='phi' ordinal='22' />
+              <column datatype='real' name='nrf' ordinal='23' />
+              <column datatype='real' name='nrc' ordinal='24' />
+              <column datatype='real' name='bpr' ordinal='25' />
+              <column datatype='real' name='farb' ordinal='26' />
+              <column datatype='integer' name='htbleed' ordinal='27' />
+              <column datatype='integer' name='nf_dmd' ordinal='28' />
+              <column datatype='integer' name='pcnfr_dmd' ordinal='29' />
+              <column datatype='real' name='w31' ordinal='30' />
+              <column datatype='real' name='w32' ordinal='31' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0cml0im0f8ary119kqz8m1krspv0' name='av_engine_data_axm.csv' table='[av_engine_data_axm#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='dataset' ordinal='0' />
+              <column datatype='integer' name='esn' ordinal='1' />
+              <column datatype='integer' name='unit' ordinal='2' />
+              <column datatype='integer' name='flight_cycle' ordinal='3' />
+              <column datatype='datetime' name='datetime' ordinal='4' />
+              <column datatype='string' name='operator' ordinal='5' />
+              <column datatype='string' name='depart_icao' ordinal='6' />
+              <column datatype='string' name='destination_icao' ordinal='7' />
+              <column datatype='real' name='hpc_eff_mod' ordinal='8' />
+              <column datatype='real' name='hpc_flow_mod' ordinal='9' />
+              <column datatype='integer' name='tra' ordinal='10' />
+              <column datatype='real' name='t2' ordinal='11' />
+              <column datatype='real' name='t24' ordinal='12' />
+              <column datatype='real' name='t30' ordinal='13' />
+              <column datatype='real' name='t50' ordinal='14' />
+              <column datatype='real' name='p2' ordinal='15' />
+              <column datatype='real' name='p15' ordinal='16' />
+              <column datatype='real' name='p30' ordinal='17' />
+              <column datatype='real' name='nf' ordinal='18' />
+              <column datatype='real' name='nc' ordinal='19' />
+              <column datatype='real' name='epr' ordinal='20' />
+              <column datatype='real' name='ps30' ordinal='21' />
+              <column datatype='real' name='phi' ordinal='22' />
+              <column datatype='real' name='nrf' ordinal='23' />
+              <column datatype='real' name='nrc' ordinal='24' />
+              <column datatype='real' name='bpr' ordinal='25' />
+              <column datatype='real' name='farb' ordinal='26' />
+              <column datatype='integer' name='htbleed' ordinal='27' />
+              <column datatype='integer' name='nf_dmd' ordinal='28' />
+              <column datatype='integer' name='pcnfr_dmd' ordinal='29' />
+              <column datatype='real' name='w31' ordinal='30' />
+              <column datatype='real' name='w32' ordinal='31' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0cml0im0f8ary119kqz8m1krspv0' name='av_engine_data_fron.csv' table='[av_engine_data_fron#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='dataset' ordinal='0' />
+              <column datatype='integer' name='esn' ordinal='1' />
+              <column datatype='integer' name='unit' ordinal='2' />
+              <column datatype='integer' name='flight_cycle' ordinal='3' />
+              <column datatype='datetime' name='datetime' ordinal='4' />
+              <column datatype='string' name='operator' ordinal='5' />
+              <column datatype='string' name='depart_icao' ordinal='6' />
+              <column datatype='string' name='destination_icao' ordinal='7' />
+              <column datatype='real' name='hpc_eff_mod' ordinal='8' />
+              <column datatype='real' name='hpc_flow_mod' ordinal='9' />
+              <column datatype='integer' name='tra' ordinal='10' />
+              <column datatype='real' name='t2' ordinal='11' />
+              <column datatype='real' name='t24' ordinal='12' />
+              <column datatype='real' name='t30' ordinal='13' />
+              <column datatype='real' name='t50' ordinal='14' />
+              <column datatype='real' name='p2' ordinal='15' />
+              <column datatype='real' name='p15' ordinal='16' />
+              <column datatype='real' name='p30' ordinal='17' />
+              <column datatype='real' name='nf' ordinal='18' />
+              <column datatype='real' name='nc' ordinal='19' />
+              <column datatype='real' name='epr' ordinal='20' />
+              <column datatype='real' name='ps30' ordinal='21' />
+              <column datatype='real' name='phi' ordinal='22' />
+              <column datatype='real' name='nrf' ordinal='23' />
+              <column datatype='real' name='nrc' ordinal='24' />
+              <column datatype='real' name='bpr' ordinal='25' />
+              <column datatype='real' name='farb' ordinal='26' />
+              <column datatype='integer' name='htbleed' ordinal='27' />
+              <column datatype='integer' name='nf_dmd' ordinal='28' />
+              <column datatype='integer' name='pcnfr_dmd' ordinal='29' />
+              <column datatype='real' name='w31' ordinal='30' />
+              <column datatype='real' name='w32' ordinal='31' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0cml0im0f8ary119kqz8m1krspv0' name='av_engine_data_pgt.csv' table='[av_engine_data_pgt#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='dataset' ordinal='0' />
+              <column datatype='integer' name='esn' ordinal='1' />
+              <column datatype='integer' name='unit' ordinal='2' />
+              <column datatype='integer' name='flight_cycle' ordinal='3' />
+              <column datatype='datetime' name='datetime' ordinal='4' />
+              <column datatype='string' name='operator' ordinal='5' />
+              <column datatype='string' name='depart_icao' ordinal='6' />
+              <column datatype='string' name='destination_icao' ordinal='7' />
+              <column datatype='real' name='hpc_eff_mod' ordinal='8' />
+              <column datatype='real' name='hpc_flow_mod' ordinal='9' />
+              <column datatype='integer' name='tra' ordinal='10' />
+              <column datatype='real' name='t2' ordinal='11' />
+              <column datatype='real' name='t24' ordinal='12' />
+              <column datatype='real' name='t30' ordinal='13' />
+              <column datatype='real' name='t50' ordinal='14' />
+              <column datatype='real' name='p2' ordinal='15' />
+              <column datatype='real' name='p15' ordinal='16' />
+              <column datatype='real' name='p30' ordinal='17' />
+              <column datatype='real' name='nf' ordinal='18' />
+              <column datatype='real' name='nc' ordinal='19' />
+              <column datatype='real' name='epr' ordinal='20' />
+              <column datatype='real' name='ps30' ordinal='21' />
+              <column datatype='real' name='phi' ordinal='22' />
+              <column datatype='real' name='nrf' ordinal='23' />
+              <column datatype='real' name='nrc' ordinal='24' />
+              <column datatype='real' name='bpr' ordinal='25' />
+              <column datatype='real' name='farb' ordinal='26' />
+              <column datatype='integer' name='htbleed' ordinal='27' />
+              <column datatype='integer' name='nf_dmd' ordinal='28' />
+              <column datatype='integer' name='pcnfr_dmd' ordinal='29' />
+              <column datatype='real' name='w31' ordinal='30' />
+              <column datatype='real' name='w32' ordinal='31' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dataset</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dataset]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>dataset</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>esn</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[esn]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>esn</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[unit]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>unit</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flight_cycle</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[flight_cycle]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>flight_cycle</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>datetime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[datetime]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>datetime</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[operator]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>operator</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>depart_icao</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[depart_icao]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>depart_icao</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>destination_icao</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[destination_icao]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>destination_icao</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hpc_eff_mod</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hpc_eff_mod]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>hpc_eff_mod</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hpc_flow_mod</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hpc_flow_mod]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>hpc_flow_mod</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tra</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tra]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>tra</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[t2]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>t2</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t24</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[t24]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>t24</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t30</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[t30]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>t30</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t50</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[t50]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>t50</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>p2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[p2]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>p2</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>p15</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[p15]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>p15</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>p30</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[p30]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>p30</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nf</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nf]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>nf</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nc]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>nc</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>epr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[epr]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>epr</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ps30</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ps30]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>ps30</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[phi]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>phi</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nrf</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nrf]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>nrf</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nrc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nrc]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>nrc</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bpr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bpr]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>bpr</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>farb</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[farb]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>farb</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>htbleed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[htbleed]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>htbleed</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nf_dmd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nf_dmd]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>nf_dmd</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pcnfr_dmd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pcnfr_dmd]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>pcnfr_dmd</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>w31</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[w31]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>w31</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>w32</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[w32]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>w32</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[av_engine_data_aic.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='T24' datatype='real' name='[Calculation_1503357854612680704]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[t24]+459.67' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Flight Data Tables' datatype='table' name='[__tableau_internal_object_id__].[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]' role='measure' type='quantitative' />
+      <column caption='Bpr' datatype='real' name='[bpr]' role='measure' type='quantitative' />
+      <column caption='Dataset' datatype='string' name='[dataset]' role='dimension' type='nominal' />
+      <column caption='Datetime' datatype='datetime' name='[datetime]' role='dimension' type='ordinal' />
+      <column caption='Depart Icao' datatype='string' name='[depart_icao]' role='dimension' type='nominal' />
+      <column caption='Destination Icao' datatype='string' name='[destination_icao]' role='dimension' type='nominal' />
+      <column caption='Epr' datatype='real' name='[epr]' role='measure' type='quantitative' />
+      <column caption='Esn' datatype='integer' name='[esn]' role='measure' type='quantitative' />
+      <column caption='Farb' datatype='real' name='[farb]' role='measure' type='quantitative' />
+      <column caption='Flight Cycle' datatype='integer' name='[flight_cycle]' role='measure' type='quantitative' />
+      <column caption='Hpc Eff Mod' datatype='real' name='[hpc_eff_mod]' role='measure' type='quantitative' />
+      <column caption='Hpc Flow Mod' datatype='real' name='[hpc_flow_mod]' role='measure' type='quantitative' />
+      <column caption='Htbleed' datatype='integer' name='[htbleed]' role='measure' type='quantitative' />
+      <column caption='Nc' datatype='real' name='[nc]' role='measure' type='quantitative' />
+      <column caption='Nf' datatype='real' name='[nf]' role='measure' type='quantitative' />
+      <column caption='Nf Dmd' datatype='integer' name='[nf_dmd]' role='measure' type='quantitative' />
+      <column caption='Nrc' datatype='real' name='[nrc]' role='measure' type='quantitative' />
+      <column caption='Nrf' datatype='real' name='[nrf]' role='measure' type='quantitative' />
+      <column caption='Operator' datatype='string' name='[operator]' role='dimension' type='nominal' />
+      <column caption='P15' datatype='real' name='[p15]' role='measure' type='quantitative' />
+      <column caption='P2' datatype='real' name='[p2]' role='measure' type='quantitative' />
+      <column caption='P30' datatype='real' name='[p30]' role='measure' type='quantitative' />
+      <column caption='Pcnfr Dmd' datatype='integer' name='[pcnfr_dmd]' role='measure' type='quantitative' />
+      <column caption='Phi' datatype='real' name='[phi]' role='measure' type='quantitative' />
+      <column caption='Ps30' datatype='real' name='[ps30]' role='measure' type='quantitative' />
+      <column caption='tt4' datatype='real' hidden='true' name='[t24]' role='measure' type='quantitative' />
+      <column caption='T2' datatype='real' name='[t2]' role='measure' type='quantitative' />
+      <column caption='T30' datatype='real' name='[t30]' role='measure' type='quantitative' />
+      <column caption='T50' datatype='real' name='[t50]' role='measure' type='quantitative' />
+      <column caption='Tra' datatype='integer' name='[tra]' role='measure' type='quantitative' />
+      <column caption='Unit' datatype='integer' name='[unit]' role='measure' type='quantitative' />
+      <column caption='W31' datatype='real' name='[w31]' role='measure' type='quantitative' />
+      <column caption='W32' datatype='real' name='[w32]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Bangladesh&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='dataset' />
+        <field-sort-custom-order field='esn' />
+        <field-sort-custom-order field='unit' />
+        <field-sort-custom-order field='flight_cycle' />
+        <field-sort-custom-order field='datetime' />
+        <field-sort-custom-order field='operator' />
+        <field-sort-custom-order field='depart_icao' />
+        <field-sort-custom-order field='destination_icao' />
+        <field-sort-custom-order field='hpc_eff_mod' />
+        <field-sort-custom-order field='hpc_flow_mod' />
+        <field-sort-custom-order field='tra' />
+        <field-sort-custom-order field='t2' />
+        <field-sort-custom-order field='t24' />
+        <field-sort-custom-order field='Calculation_1503357854612680704' />
+        <field-sort-custom-order field='t30' />
+        <field-sort-custom-order field='t50' />
+        <field-sort-custom-order field='p2' />
+        <field-sort-custom-order field='p15' />
+        <field-sort-custom-order field='p30' />
+        <field-sort-custom-order field='nf' />
+        <field-sort-custom-order field='nc' />
+        <field-sort-custom-order field='epr' />
+        <field-sort-custom-order field='ps30' />
+        <field-sort-custom-order field='phi' />
+        <field-sort-custom-order field='nrf' />
+        <field-sort-custom-order field='nrc' />
+        <field-sort-custom-order field='bpr' />
+        <field-sort-custom-order field='farb' />
+        <field-sort-custom-order field='htbleed' />
+        <field-sort-custom-order field='nf_dmd' />
+        <field-sort-custom-order field='pcnfr_dmd' />
+        <field-sort-custom-order field='w31' />
+        <field-sort-custom-order field='w32' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Flight Data Tables' id='av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C'>
+            <properties context=''>
+              <relation all='true' name='av_engine_data_aic.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='dataset' />
+                  <column datatype='integer' name='esn' />
+                  <column datatype='integer' name='unit' />
+                  <column datatype='integer' name='flight_cycle' />
+                  <column datatype='datetime' name='datetime' />
+                  <column datatype='string' name='operator' />
+                  <column datatype='string' name='depart_icao' />
+                  <column datatype='string' name='destination_icao' />
+                  <column datatype='real' name='hpc_eff_mod' />
+                  <column datatype='real' name='hpc_flow_mod' />
+                  <column datatype='integer' name='tra' />
+                  <column datatype='real' name='t2' />
+                  <column datatype='real' name='t24' />
+                  <column datatype='real' name='t30' />
+                  <column datatype='real' name='t50' />
+                  <column datatype='real' name='p2' />
+                  <column datatype='real' name='p15' />
+                  <column datatype='real' name='p30' />
+                  <column datatype='real' name='nf' />
+                  <column datatype='real' name='nc' />
+                  <column datatype='real' name='epr' />
+                  <column datatype='real' name='ps30' />
+                  <column datatype='real' name='phi' />
+                  <column datatype='real' name='nrf' />
+                  <column datatype='real' name='nrc' />
+                  <column datatype='real' name='bpr' />
+                  <column datatype='real' name='farb' />
+                  <column datatype='integer' name='htbleed' />
+                  <column datatype='integer' name='nf_dmd' />
+                  <column datatype='integer' name='pcnfr_dmd' />
+                  <column datatype='real' name='w31' />
+                  <column datatype='real' name='w32' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.0cml0im0f8ary119kqz8m1krspv0' name='av_engine_data_aic.csv' table='[av_engine_data_aic#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='dataset' ordinal='0' />
+                    <column datatype='integer' name='esn' ordinal='1' />
+                    <column datatype='integer' name='unit' ordinal='2' />
+                    <column datatype='integer' name='flight_cycle' ordinal='3' />
+                    <column datatype='datetime' name='datetime' ordinal='4' />
+                    <column datatype='string' name='operator' ordinal='5' />
+                    <column datatype='string' name='depart_icao' ordinal='6' />
+                    <column datatype='string' name='destination_icao' ordinal='7' />
+                    <column datatype='real' name='hpc_eff_mod' ordinal='8' />
+                    <column datatype='real' name='hpc_flow_mod' ordinal='9' />
+                    <column datatype='integer' name='tra' ordinal='10' />
+                    <column datatype='real' name='t2' ordinal='11' />
+                    <column datatype='real' name='t24' ordinal='12' />
+                    <column datatype='real' name='t30' ordinal='13' />
+                    <column datatype='real' name='t50' ordinal='14' />
+                    <column datatype='real' name='p2' ordinal='15' />
+                    <column datatype='real' name='p15' ordinal='16' />
+                    <column datatype='real' name='p30' ordinal='17' />
+                    <column datatype='real' name='nf' ordinal='18' />
+                    <column datatype='real' name='nc' ordinal='19' />
+                    <column datatype='real' name='epr' ordinal='20' />
+                    <column datatype='real' name='ps30' ordinal='21' />
+                    <column datatype='real' name='phi' ordinal='22' />
+                    <column datatype='real' name='nrf' ordinal='23' />
+                    <column datatype='real' name='nrc' ordinal='24' />
+                    <column datatype='real' name='bpr' ordinal='25' />
+                    <column datatype='real' name='farb' ordinal='26' />
+                    <column datatype='integer' name='htbleed' ordinal='27' />
+                    <column datatype='integer' name='nf_dmd' ordinal='28' />
+                    <column datatype='integer' name='pcnfr_dmd' ordinal='29' />
+                    <column datatype='real' name='w31' ordinal='30' />
+                    <column datatype='real' name='w32' ordinal='31' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0cml0im0f8ary119kqz8m1krspv0' name='av_engine_data_axm.csv' table='[av_engine_data_axm#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='dataset' ordinal='0' />
+                    <column datatype='integer' name='esn' ordinal='1' />
+                    <column datatype='integer' name='unit' ordinal='2' />
+                    <column datatype='integer' name='flight_cycle' ordinal='3' />
+                    <column datatype='datetime' name='datetime' ordinal='4' />
+                    <column datatype='string' name='operator' ordinal='5' />
+                    <column datatype='string' name='depart_icao' ordinal='6' />
+                    <column datatype='string' name='destination_icao' ordinal='7' />
+                    <column datatype='real' name='hpc_eff_mod' ordinal='8' />
+                    <column datatype='real' name='hpc_flow_mod' ordinal='9' />
+                    <column datatype='integer' name='tra' ordinal='10' />
+                    <column datatype='real' name='t2' ordinal='11' />
+                    <column datatype='real' name='t24' ordinal='12' />
+                    <column datatype='real' name='t30' ordinal='13' />
+                    <column datatype='real' name='t50' ordinal='14' />
+                    <column datatype='real' name='p2' ordinal='15' />
+                    <column datatype='real' name='p15' ordinal='16' />
+                    <column datatype='real' name='p30' ordinal='17' />
+                    <column datatype='real' name='nf' ordinal='18' />
+                    <column datatype='real' name='nc' ordinal='19' />
+                    <column datatype='real' name='epr' ordinal='20' />
+                    <column datatype='real' name='ps30' ordinal='21' />
+                    <column datatype='real' name='phi' ordinal='22' />
+                    <column datatype='real' name='nrf' ordinal='23' />
+                    <column datatype='real' name='nrc' ordinal='24' />
+                    <column datatype='real' name='bpr' ordinal='25' />
+                    <column datatype='real' name='farb' ordinal='26' />
+                    <column datatype='integer' name='htbleed' ordinal='27' />
+                    <column datatype='integer' name='nf_dmd' ordinal='28' />
+                    <column datatype='integer' name='pcnfr_dmd' ordinal='29' />
+                    <column datatype='real' name='w31' ordinal='30' />
+                    <column datatype='real' name='w32' ordinal='31' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0cml0im0f8ary119kqz8m1krspv0' name='av_engine_data_fron.csv' table='[av_engine_data_fron#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='dataset' ordinal='0' />
+                    <column datatype='integer' name='esn' ordinal='1' />
+                    <column datatype='integer' name='unit' ordinal='2' />
+                    <column datatype='integer' name='flight_cycle' ordinal='3' />
+                    <column datatype='datetime' name='datetime' ordinal='4' />
+                    <column datatype='string' name='operator' ordinal='5' />
+                    <column datatype='string' name='depart_icao' ordinal='6' />
+                    <column datatype='string' name='destination_icao' ordinal='7' />
+                    <column datatype='real' name='hpc_eff_mod' ordinal='8' />
+                    <column datatype='real' name='hpc_flow_mod' ordinal='9' />
+                    <column datatype='integer' name='tra' ordinal='10' />
+                    <column datatype='real' name='t2' ordinal='11' />
+                    <column datatype='real' name='t24' ordinal='12' />
+                    <column datatype='real' name='t30' ordinal='13' />
+                    <column datatype='real' name='t50' ordinal='14' />
+                    <column datatype='real' name='p2' ordinal='15' />
+                    <column datatype='real' name='p15' ordinal='16' />
+                    <column datatype='real' name='p30' ordinal='17' />
+                    <column datatype='real' name='nf' ordinal='18' />
+                    <column datatype='real' name='nc' ordinal='19' />
+                    <column datatype='real' name='epr' ordinal='20' />
+                    <column datatype='real' name='ps30' ordinal='21' />
+                    <column datatype='real' name='phi' ordinal='22' />
+                    <column datatype='real' name='nrf' ordinal='23' />
+                    <column datatype='real' name='nrc' ordinal='24' />
+                    <column datatype='real' name='bpr' ordinal='25' />
+                    <column datatype='real' name='farb' ordinal='26' />
+                    <column datatype='integer' name='htbleed' ordinal='27' />
+                    <column datatype='integer' name='nf_dmd' ordinal='28' />
+                    <column datatype='integer' name='pcnfr_dmd' ordinal='29' />
+                    <column datatype='real' name='w31' ordinal='30' />
+                    <column datatype='real' name='w32' ordinal='31' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0cml0im0f8ary119kqz8m1krspv0' name='av_engine_data_pgt.csv' table='[av_engine_data_pgt#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='dataset' ordinal='0' />
+                    <column datatype='integer' name='esn' ordinal='1' />
+                    <column datatype='integer' name='unit' ordinal='2' />
+                    <column datatype='integer' name='flight_cycle' ordinal='3' />
+                    <column datatype='datetime' name='datetime' ordinal='4' />
+                    <column datatype='string' name='operator' ordinal='5' />
+                    <column datatype='string' name='depart_icao' ordinal='6' />
+                    <column datatype='string' name='destination_icao' ordinal='7' />
+                    <column datatype='real' name='hpc_eff_mod' ordinal='8' />
+                    <column datatype='real' name='hpc_flow_mod' ordinal='9' />
+                    <column datatype='integer' name='tra' ordinal='10' />
+                    <column datatype='real' name='t2' ordinal='11' />
+                    <column datatype='real' name='t24' ordinal='12' />
+                    <column datatype='real' name='t30' ordinal='13' />
+                    <column datatype='real' name='t50' ordinal='14' />
+                    <column datatype='real' name='p2' ordinal='15' />
+                    <column datatype='real' name='p15' ordinal='16' />
+                    <column datatype='real' name='p30' ordinal='17' />
+                    <column datatype='real' name='nf' ordinal='18' />
+                    <column datatype='real' name='nc' ordinal='19' />
+                    <column datatype='real' name='epr' ordinal='20' />
+                    <column datatype='real' name='ps30' ordinal='21' />
+                    <column datatype='real' name='phi' ordinal='22' />
+                    <column datatype='real' name='nrf' ordinal='23' />
+                    <column datatype='real' name='nrc' ordinal='24' />
+                    <column datatype='real' name='bpr' ordinal='25' />
+                    <column datatype='real' name='farb' ordinal='26' />
+                    <column datatype='integer' name='htbleed' ordinal='27' />
+                    <column datatype='integer' name='nf_dmd' ordinal='28' />
+                    <column datatype='integer' name='pcnfr_dmd' ordinal='29' />
+                    <column datatype='real' name='w31' ordinal='30' />
+                    <column datatype='real' name='w32' ordinal='31' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Flight Data Tables' name='federated.1ug3vr31bs3n3q14khb1r0i7jhel' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ug3vr31bs3n3q14khb1r0i7jhel'>
+            <_.fcp.ObjectModelTableType.true...column caption='Flight Data Tables' datatype='table' name='[__tableau_internal_object_id__].[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='Flight Data Tables' datatype='integer' name='[__tableau_internal_object_id__].[av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ug3vr31bs3n3q14khb1r0i7jhel].[__tableau_internal_object_id__].[cnt:av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1267FB34-255E-423E-ADC0-071A704BCC2D}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ug3vr31bs3n3q14khb1r0i7jhel].[__tableau_internal_object_id__].[cnt:av_engine_data_aic.csv_4B8D62AEDA394EA5A0F034C812F9DA9C:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>30004</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{E0F1D3D0-D690-4E69-8FA1-B378A962EEB5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='29' name='Sheet 1' width='84'>
+      iVBORw0KGgoAAAANSUhEUgAAAFQAAAAdCAYAAAA0PEtlAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAE/klEQVRoge2Ye2yTVRiHn37t1svuW+nIpA5ELjLUiU7ubEKHCFkgEHADCVMxwYSAiQqS
+      YGDEG0KiBK8RUFRAZAZEhiL32wZMZeCkWBywK7t3W7u2W2/+MWiY7RxbPjogff7sec/5ne/3
+      nbfvez6J2+12E0A0hJ7ewL1GwFCRCRgqMgFDRSZgqMgEDBWZgKEiI+ss4EC5yR/7uGcInFCR
+      CRgqMgFDRSZgqMgEDBWZgKEi02nbJBZVJVc48sM2is6fxdRQD0B4tJpRU6Yxasp0guTydvGX
+      zv7G7g3rqa0oQyYLYthTE5n8/MvIlcrOtUqvkr1uNWVFBgRBysBhSUxb8AoRMb28YrujYzWb
+      2JS1lFKDnjlLVvDw6BTPmKSz76Fi9KEtFgtb12ShHTSEJN0zhEerASgrMpC9bjVx/QcwY+Fr
+      yIKCATh3/BB7NnzM1AWLSRg+BnOjkez1a3A5Hcxd9hbBCkWHWqUGPV+/vZyUmXMYMSkNh93B
+      3i8/5ar+T+avWktYVIwntrs6x3/cQbG+EGNNJSnTM9oZ6peUD1YoyHzzXXTp84hQa5AIAhJB
+      QDtgMLOXrKC8yEBNeSnQ9vaP7dqObnYmQ0eOQyIIhEXFMGvxG1jNZi6cOdmhjtPp4HD2FhKT
+      JzBq8jSksiDkSiVpLy0kunccp/ft8cR2V6emrISCo/tJnpGBVOqd4H4x9IaBvgiWK5BIJDjs
+      dgDKiwy4HE4eShrZLi4kIpLBSSPRn8nF7XL5XMtYVUltRRmJyant9GRBwSSOm8Cls/m0WCzd
+      1nHYWznw3WYSk1PR3He/zz30aFFyu1z8fngf4TFqYrV9ATBWVxKh7kVIRKRXfJ8HB9FQW43N
+      avG5XkNNFXKliihNrNeYRhtPq82GxdTUbZ2/Tp2gqb6OJ1OndPhMfitKN2NvbaFYX8jB7d8A
+      btJfXe75v2qsqyVIrvCZTsrQMGzNZlptVpQhoV7jVrMJiUTic64qLByXy0mTsY6o2N5d1mlu
+      bCA3Zye69EzkKpXnpP+XHjmhgiAQHq2mX8Ij1F2r4GJ+XodpfCdQatCzceUSZi5ayoDEx/83
+      tkcMlcqC0GjjmTjnBeavWktuzk6uXDgPQESMGnuLDafT4TXPajahCAklWOG7pVGGhuF2u33O
+      tZiaEAQp4der/K3qOOytHNrxLY+lpKKO69Pps/VIyt+MRhuPRtuXy4XneGBoIhptX079spvm
+      xgZPe3WDsn/+JlKtQaFU+VxLHafFYbdjrK5CFRbebqy6tJhghcLz+63qlBj0XC4sQH8ml5xN
+      n3hpbnk/C8hCl5GJLn2efwx1OuwIgtRnpW+12bA0NRKp1gCg6dNWPfX5eQx/Os0T19zYwMX8
+      PMbPmtthxxAWHU2UJpaCo/uJ69ffE+ewt1Jw7CBDho9BrlJ1SSd+cAJZ23K8tFosFjaufJ2x
+      U2f6vw+9cPokHy6ezx+Hf8XcYATaKnzdtXK2f/AOLpeThBFjgLa01T07jwNbv6Iw7xhulwuT
+      sY7v171HhFrDwGFJnnWdTgefLVtEi9UKgFQqIzUjk/MnjpC7dxdOh50Wq5WfvvgIs7GeJyZM
+      8sztik5X8MtNye1yUXjqOHk5u6gsvozF1ITkemFKSp3M6LQZXlX7Vq6E5UWXqK0o5dGx49vN
+      vd1XT+j4hPrF0NvFz5s/Z+JzL/psfXqKu/ZrU1N9LdVlJXeUmQD/AnKXW3aREgVlAAAAAElF
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
